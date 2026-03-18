@@ -1,1 +1,40 @@
+# === C# / .NET (Backend) ===
+[Bb]in/
+[Oo]bj/
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.doccache
+appsettings.Development.json
+# Verilənlər bazası faylları (əgər lokalda SQL istifadə edirsənsə)
+*.mdf
+*.ldf
 
+# === Next.js / Node.js (Frontend) ===
+node_modules/
+.next/
+out/
+build/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# === macOS Sistem Faylları ===
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# === Digər ===
+.idea/
+*.swp
+*~
