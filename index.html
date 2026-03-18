@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>2048 Pro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>2048 <span class="pro-badge">PRO</span></h1>
+      <div class="controls">
+        <button id="theme-toggle" title="Change Theme"><i class="fas fa-palette"></i></button>
+        <button id="sound-toggle" title="Toggle Sound"><i class="fas fa-volume-up"></i></button>
+      </div>
+    </div>
+    
+    <div class="game-info">
+      <div class="score-container">
+        <div class="score">Score: <span id="score">0</span></div>
+        <div class="best-score">Best: <span id="best-score">0</span></div>
+      </div>
+    </div>
+    
+    <div class="grid-container">
+      <div class="grid" id="grid"></div>
+    </div>
+    
+    <div class="button-group">
+      <button id="undo" title="Undo Move (Ctrl+Z)"><i class="fas fa-undo"></i> Undo</button>
+      <button id="restart" title="Restart Game"><i class="fas fa-redo"></i> Restart</button>
+    </div>
+    
+    <div class="instructions">
+      <p><i class="fas fa-arrow-up"></i> <i class="fas fa-arrow-right"></i> <i class="fas fa-arrow-down"></i> <i class="fas fa-arrow-left"></i> to move | Swipe on mobile</p>
+    </div>
+  </div>
+  
+  <audio id="merge-sound" src="sounds/merge.mp3" preload="auto"></audio>
+  <audio id="gameover-sound" src="sounds/gameover.mp3" preload="auto"></audio>
+  <audio id="win-sound" src="sounds/win.mp3" preload="auto"></audio>
+  
+  <script src="js/game.js"></script>
+</body>
+</html>
